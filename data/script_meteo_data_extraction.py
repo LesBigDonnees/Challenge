@@ -5,7 +5,7 @@ Created on Fri Oct  6 14:53:40 2017
 @author: lucas
 """
 
-
+# Nummber of train files
 TRAIN_NUMBER = 36
 
 import pandas as pd
@@ -22,4 +22,4 @@ data = pd.concat(frames)
 df = data.replace(np.nan, 0)
 
 # Write file in same directory than script
-data.to_csv('train_global.csv')
+df.to_csv('train_global.csv', sep=';', encoding='utf-8')
