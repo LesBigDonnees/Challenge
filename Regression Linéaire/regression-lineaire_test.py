@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import sklearn
 
 #importation des données
-df = pd.read_csv('C:/Users/flori_000/Documents/GitHub/Challenge/data/train_global.csv', sep=";")
+df = pd.read_csv('C:/Users/flori_000/Documents/GitHub/Challenge/data/test.csv', sep=";")
 df.head()
 
 from sklearn.linear_model import LinearRegression
@@ -13,7 +13,7 @@ modeleReg = LinearRegression()
 
 #création de nos variables
 #list_var = df.columns.drop(["tH2","date","mois"])
-list_var = df.columns.drop(["tH2","date","mois","tH2_obs"])
+list_var = df.columns.drop(["tH2","date","mois"])
 #print(list_var)
 y = df.tH2
 X = df[list_var]

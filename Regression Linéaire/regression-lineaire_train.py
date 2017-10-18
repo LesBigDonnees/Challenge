@@ -3,6 +3,7 @@ import pandas as pd
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 import sklearn
+from sklearn import linear_model
 
 #importation des données
 df = pd.read_csv('C:/Users/flori_000/Documents/GitHub/Challenge/data/train_global.csv', sep=";")
