@@ -14,7 +14,7 @@ import numpy as np
 # Concatenate all dataframes in only one
 frames = []
 for i in range(1, TRAIN_NUMBER+1):
-    df = pd.read_csv('train_' + str(i) + '.csv', sep=";")
+    df = pd.read_csv('train_' + str(i) + '.csv', sep=";", decimal=",")
     frames.append(df)
 data = pd.concat(frames)
 
